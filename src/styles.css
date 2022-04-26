@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: "Merriweather-Regular";
+    src: local("Merriweather-Regular"), url("assets/fonts/Merriweather-Regular.ttf") format("truetype");
+}
+html {
+    @apply font-body;
+}
+body {
+    @apply bg-bgColor dark:bg-black;
+}
