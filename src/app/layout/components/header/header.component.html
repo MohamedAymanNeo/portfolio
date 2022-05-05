@@ -1,29 +1,55 @@
-<nav class="flex justify-around items-center">
-    <div class="">
-      <h1 class="font-bold uppercase p-4 border border-gray-100">
-        <a href="/" class="hover:text-gray-700">Mohamed Ayman</a>
-      </h1>
-      <div class="px-4 cursor-pointer md:hidden">
-        <svg class="w-5" id="burger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+  <!-- Fixed Navigation Starts -->
+  <ul class="icon-menu d-none d-lg-block">
+      <li class="icon-box active">
+          <i class="fa fa-home"></i>
+          <a class="linkText" [routerLink]="['/home']">
+              <h2 >Home</h2>
+          </a>
+      </li>
+      <li class="icon-box">
+          <i class="fa fa-user"></i>
+          <a class="linkText" [routerLink]="['/about']">
+              <h2>About</h2>
+          </a>
+      </li>
+      <li class="icon-box">
+          <i class="fa fa-briefcase"></i>
+          <a class="linkText" [routerLink]="['/portfolio']">
+              <h2>Portfolio</h2>
+          </a>
+      </li>
+      <li class="icon-box">
+          <i class="fa fa-envelope-open"></i>
+          <a class="linkText" href="contact.html">
+              <h2>Contact</h2>
+          </a>
+      </li>
+      <li class="icon-box">
+          <i class="fa fa-comments"></i>
+          <a class="linkText" href="blog.html">
+              <h2>Blog</h2>
+          </a>
+      </li>
+  </ul>
+  <!-- Fixed Navigation Ends -->
+  <!-- Mobile Menu Starts -->
+  <nav role="navigation" class="navMobile">
+      <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul class="list-unstyled" id="menu">
+              <li class="active"><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+              <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+              <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+              <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+              <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+          </ul>
       </div>
-    </div>
-    <ul class="text-sm mt-6 flex" id="menu">
-      <li class="text-gray-700 font-bold py-1">
-        <a href="#" class="px-4 flex justify-end">
-          <span>Home</span>
-        </a>
-      </li>
-      <li class="text-gray-700 font-bold py-1">
-        <a href="#" class="px-4 flex justify-end">
-          <span>Home</span>
-        </a>
-      </li>
-      <li class="text-gray-700 font-bold py-1">
-        <a href="#" class="px-4 flex justify-end">
-          <span>Home</span>
-        </a>
-      </li>
-    </ul>
   </nav>
+  <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
