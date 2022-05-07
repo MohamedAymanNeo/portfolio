@@ -16,7 +16,8 @@ module.exports = {
         iconColor: '#ddd',
         menuBg: {
           light: '#eee',
-          dark: '#252525'
+          dark: '#252525',
+          300: '#333'
         },
         menuTextColor: '#666',
       },
@@ -24,17 +25,26 @@ module.exports = {
         '3': '3',
         '-1': '-1',
       },
+      inset: {
+        '-83%':'-83%',
+        '42%':'42%',
+        '37%':'37%',
+      },
       lineHeight: {
-        '12': '3rem'
+        '12': '3rem',
+        '14': '4rem'
       },
       borderRadius: {
-        '4xl':'2rem'
+        '4xl':'2rem',
+        '5xl':'2.2rem',
       },
       width: {
-        'cst':'3.2rem'
+        'cst':'3.2rem',
+        '600px':'38rem',
       },
       height: {
-        'cst':'3.2rem'
+        'cst':'3.2rem',
+        '2full': '200%'
       },
     },
   },
