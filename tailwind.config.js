@@ -14,6 +14,7 @@ module.exports = {
         secondery: '#ffb400',
         customBg: '#2b2a2a',
         iconColor: '#ddd',
+        titleBgRgba: '#ffffff12',
         menuBg: {
           light: '#eee',
           dark: '#252525',
@@ -23,12 +24,15 @@ module.exports = {
       },
       zIndex:  {
         '3': '3',
+        '2': '2',
+        '1': '1',
         '-1': '-1',
       },
       inset: {
         '-83%':'-83%',
         '42%':'42%',
-        '37%':'37%',
+        '32%':'32%',
+        '15%':'15%',
       },
       lineHeight: {
         '0':'0',
@@ -37,6 +41,14 @@ module.exports = {
       },
       borderWidth: {
         '1':'1px'
+      },
+      fontSize: {
+        '5.5xl': '3.5rem',
+        '2.5xl': '1.625rem',
+        '8.5xl': '6.875rem',
+      },
+      letterSpacing: {
+        '10px': '0.625rem'
       },
       borderRadius: {
         '4xl':'2rem',
