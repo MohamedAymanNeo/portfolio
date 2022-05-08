@@ -122,7 +122,7 @@ body {
 
 #menuToggle {
     @apply inline-block fixed 
-    top-8 right-8 z-50 select-none
+    top-3 right-8 z-50 select-none
     w-cst h-cst rounded-md bg-menuBg-dark;
     padding: 19px 0 0 16px;
   }
@@ -219,7 +219,10 @@ body {
   @apply flex items-center min-h-full;
 }
 .home-details {
-  @apply fixed lg:top-37% xl:left-1/2 lg:left-42% sm:top-96 sm:left-28 top-1/4 sm:p-0 px-6;
+  @apply fixed 
+  lg:top-32% 
+  xl:left-1/2 lg:left-42% 
+  sm:left-28 top-15% sm:p-0 px-6;
 }
 .home-details > div {
   @apply mx-auto my-0 lg:text-left sm:text-center;
@@ -258,7 +261,7 @@ body {
 .button {
   @apply overflow-hidden inline-block rounded-5xl whitespace-nowrap text-ellipsis 
   text-center cursor-pointer align-middle select-none uppercase
-  relative bg-transparent text-white font-semibold outline-none z-3 no-underline duration-300 transition-all ease-in-out
+  relative bg-transparent text-white font-semibold outline-none z-1 no-underline duration-300 transition-all ease-in-out
   border-1 border-solid border-secondery
   /* Before */
   before:content-[''] before:-z-1 before:absolute before:inset-0 before:bg-secondery 
@@ -281,6 +284,85 @@ body {
 }
 /* [ End Home Component ] */
 /*================================================== */
+
+/* Title Section */
+
+.title-section {
+  @apply w-full md:relative fixed h-fit
+  inset-0 
+  md:bg-transparent bg-menuBg-dark
+  md:border-0 border-b-1 border-solid border-menuBg-300
+  mb-9 z-2
+  md:py-20 pt-4 pb-3
+  md:px-0 px-6 
+  md:my-0 md:mx-auto 
+  md:text-center text-left
+}
+.title-section h1 {
+  @apply md:text-5.5xl text-2.5xl font-black text-white uppercase m-0;
+}
+
+.title-section h1 span {
+  @apply text-secondery;
+}
+.title-section hr {
+  @apply bg-secondery;
+}
+
+.title-bg {
+  @apply hidden 
+  md:block md:text-8.5xl md:absolute md:inset-x-0 md:top-1/2 md:uppercase 
+  md:font-extrabold md:-translate-y-1/2 md:leading-3 md:tracking-10px md:text-titleBgRgba;
+}
+
+.custom-title {
+  @apply text-xl leading-0 pb-6 font-semibold uppercase
+  md:text-2.5xl 
+}
+
+
+
+@media (max-width: 576px) {
+ 
+  /* .custom-title {
+    font-size: 21px;
+  } */
+
+  .main-content {
+    padding-bottom: 0;
+  }
+
+  .resume-box h5 {
+    font-size: 17px;
+  }
+
+  .box-stats {
+    padding: 15px 20px 20px 25px;
+  }
+
+  .c100 {
+    transform: scale(.8);
+  }
+
+  .box-stats.with-margin {
+    margin-bottom: 25px;
+  }
+
+  .box-stats h3 {
+    font-size: 40px;
+  }
+
+  .box-stats p {
+    padding-left: 0;
+  }
+
+  .box-stats p:before {
+    display: none;
+  }
+}
+
+
+
 /* [ About Component ] */
 /*================================================== */
 /*** Aboutpage ***/
@@ -324,6 +406,7 @@ body {
   margin: 0;
   font-size: 50px;
   font-weight: 700;
+  color: #ffb400;
 }
 
 .box-stats h3:after {
@@ -384,6 +467,7 @@ body {
   border-radius: 50%;
   color: #fff;
   background-color: #252525;
+  background-color: #ffb400;
 }
 
 .resume-box .time {
