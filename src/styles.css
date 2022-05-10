@@ -321,7 +321,7 @@ body {
 }
 .skills-custom-title {
   @apply uppercase font-semibold text-xl md:text-2.5xl 
-  sm:text-center text-left sm:pb-12 pb-16 mb-3 sm:mb-0;
+  sm:text-center text-left sm:py-12 py-16 mb-3 sm:mb-0;
 }
 
 
@@ -407,6 +407,10 @@ body {
   border-radius: 5px;
   border: 1px solid #252525;
 }
+
+.box-stats {
+  @apply border-1 border-solid border-iconColor;
+}
 /* 
 .box-stats.with-margin {
   margin-bottom: 30px;
@@ -443,6 +447,7 @@ body {
   height: 1px;
   background: #777;
 }
+
 
 /* Resume */
 
@@ -525,24 +530,28 @@ body {
 }
 
 /* Skills */
+.skills .items {
+  @apply grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5  gap-y-12;
+}
+.items .item {
+  @apply flex flex-col justify-center items-center;
+}
 
+.items .item .skillTitle {
+  @apply uppercase mt-2 sm:mt-4;
+}
 .c100 {
-  float: none !important;
-  margin: 0 auto;
-  background-color: #252525;
+  @apply bg-menuBg-dark;
 }
 
 .c100 > span {
-  color: #fff;
+  @apply text-white;
 }
 
 .c100:after {
-  background-color: #111;
+  @apply bg-bgColor;
 }
 
-.box-stats {
-  border: 1px solid #ddd;
-}
 
 /* .c100,
 .resume-box .time {
@@ -562,12 +571,5 @@ body {
   border-left: 1px solid #ddd;
 }
 
-.c100 > span {
-  color: #666;
-}
-
-.c100:after {
-  background-color: #fff;
-}
 /* [ End About Component ] */
 /*================================================== */
