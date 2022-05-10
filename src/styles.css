@@ -316,8 +316,12 @@ body {
 }
 
 .custom-title {
-  @apply text-xl leading-0 pb-6 font-semibold uppercase
+  @apply text-xl pb-6 font-semibold uppercase
   md:text-2.5xl 
+}
+.skills-custom-title {
+  @apply uppercase font-semibold text-xl md:text-2.5xl 
+  sm:text-center text-left sm:pb-12 pb-16 mb-3 sm:mb-0;
 }
 
 
@@ -366,8 +370,16 @@ body {
 /* [ About Component ] */
 /*================================================== */
 /*** Aboutpage ***/
-
-
+.personalInfo {
+  width: 40%;
+}
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  justify-content: flex-start;
+  align-items: center;
+}
 .main-content {
   padding-bottom: 20px;
 }
@@ -395,10 +407,10 @@ body {
   border-radius: 5px;
   border: 1px solid #252525;
 }
-
+/* 
 .box-stats.with-margin {
   margin-bottom: 30px;
-}
+} */
 
 .box-stats h3 {
   position: relative;
@@ -532,10 +544,10 @@ body {
   border: 1px solid #ddd;
 }
 
-.c100,
+/* .c100,
 .resume-box .time {
   background-color: #eee;
-}
+} */
 
 .resume-box .time,
 .resume-box p {

@@ -2,6 +2,9 @@ module.exports = {
   mode: 'jit',
   content: ['./src/**/*.{html,ts}'],
   theme: {
+    // container: {
+    //   center: true,
+    // },
     extend: {
       fontFamily: {
         body: ['Merriweather']
