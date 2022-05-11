@@ -1,0 +1,170 @@
+
+/* [ HEADER ] */
+/*================================================== */
+
+/*** Desktop Navigation ***/
+
+/*** Navigation ***/
+
+.header {
+    @apply fixed right-12 bottom-0 z-3 flex items-center top-28 opacity-100 transition-opacity duration-300;
+    height: calc(100vh - 200px);
+}
+
+/* .header.hide-header {
+  z-index: 0 !important;
+  opacity: 0;
+} */
+
+.header .icon-menu {
+    @apply m-0 p-0 hidden lg:block;
+}
+
+.header .icon-menu .icon-box {
+    @apply w-12 h-12 list-none relative flex 
+    items-center duration-300 rounded-full
+    my-5 mx-0 bg-customBg;
+}
+
+.header .icon-menu .icon-box i {
+    @apply text-iconColor duration-300 text-lg;
+}
+
+.header ul.icon-menu li.icon-box.active,
+.header ul.icon-menu li.icon-box:hover,
+.header ul.icon-menu li.icon-box.active i,
+.header ul.icon-menu li.icon-box:hover i{
+    @apply text-white;
+}
+
+.header .icon-box h2 {
+    @apply text-base font-medium;
+}
+
+.header .icon-box .linkText {
+    @apply block p-0 w-12 h-12;
+}
+.header .icon-box a:hover h2 {
+    @apply opacity-100 right-7 m-0 text-center rounded-l-4xl rounded-r-none;
+}
+.header .icon-box i.fa {
+    @apply absolute pointer-events-none leading-4;
+}
+
+.header .icon-menu i {
+    @apply block text-center text-4xl top-4
+    left-0 right-0 mx-auto my-0;
+}
+
+.header .icon-box h2 {
+    @apply absolute top-0 right-0 opacity-0 text-white
+    leading-12 h-12 uppercase rounded-4xl font-medium 
+    transition-all duration-300 -z-1
+    py-0 pl-7 pr-6;
+}
+
+
+
+.header .icon-box h2,
+.header ul.icon-menu li.icon-box.active,
+.header ul.icon-menu li.icon-box:hover
+{
+   @apply bg-secondery;
+}
+
+.navMobile {
+    @apply block lg:hidden;
+}
+
+#menuToggle {
+    @apply border border-solid border-iconColor;
+  }
+
+#menuToggle,
+#menu {
+    @apply bg-menuBg-light;
+}
+
+#menuToggle > span,
+#menuToggle input:checked ~ span {
+    @apply bg-menuTextColor;
+}
+
+
+
+
+#menuToggle {
+    @apply inline-block fixed 
+    top-3 right-8 z-50 select-none
+    w-cst h-cst rounded-md bg-menuBg-dark;
+    padding: 19px 0 0 16px;
+  }
+
+#menuToggle input {
+  @apply flex absolute 
+  top-0 left-0 z-3
+  w-cst h-cst cursor-pointer opacity-0;
+}
+
+#menuToggle > span {
+  @apply flex w-6 mb-1 relative bg-white rounded;
+  height: 2px;
+  z-index: 1;
+  transform-origin: 5px 0;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  opacity 0.55s ease;
+}
+
+#menuToggle > span:first-child {
+  transform-origin: 0 0;
+}
+
+#menuToggle > span:nth-last-child(2) {
+  transform-origin: 0 100%;
+}
+#menuToggle input:checked ~ span {
+  @apply opacity-100 bg-white rotate-45 translate-x-1 translate-y-0;
+}
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  @apply opacity-0 rotate-0 scale-x-50 scale-y-50;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(2px, 4px);
+}
+
+#menu {
+  @apply fixed top-0 left-0 w-full h-full m-0 pt-14
+  bg-menuBg-dark ;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0 0;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+#menu li {
+  @apply relative pl-8 after:absolute after:left-7 after:bg-menuBg-300 after:bg-iconColor after:content-[''] after:h-1px last:after:hidden;
+}
+#menu li a {
+  @apply text-white uppercase text-3xl
+  block relative py-3 px-0 no-underline;
+}
+#menu li a span {
+  @apply absolute left-12 font-normal;
+}
+#menu li:after {
+  width: calc(100% - 60px);
+}
+
+#menu li.active a span {
+  @apply font-semibold;
+}
+#menu li:hover a,
+#menu li.active a{
+  @apply text-secondery;
+}
+
+/* [ End Header Component ] */

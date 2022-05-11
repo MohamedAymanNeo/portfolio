@@ -1,0 +1,42 @@
+<!-- Page Title Starts -->
+<section class="title-section">
+    <h1>Experience <span>&</span>Education</h1>
+    <span class="title-bg">About Me</span>
+</section>
+
+<hr class="separator mb-12 hidden md:block">
+
+<!-- Experience & Education Starts -->
+<div class="expEduc">
+    <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="resume-box" *ngFor="let type of eduExpArray">
+            <ng-container *ngIf="type.name == 'experience'">
+                <ul>
+                    <li *ngFor="let experience of type.experienceContent">
+                        <div class="icon">
+                            <i class="{{type.icon}}"></i>
+                        </div>
+                        <span class="time open-sans-font text-uppercase">{{experience.time}}</span>
+                        <h5 class="poppins-font text-uppercase">{{experience.position}} <span class="place open-sans-font">{{experience.company}}</span></h5>
+                        <p class="open-sans-font">Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit, </p>
+                    </li>
+                </ul>
+            </ng-container>
+            <ng-container *ngIf="type.name == 'education'">
+                <ul>
+                    <li *ngFor="let education of type.educationContent">
+                        <div class="icon">
+                            <i class="{{type.icon}}"></i>
+                        </div>
+                        <span class="time open-sans-font text-uppercase">{{education.time}}</span>
+                        <h5 class="poppins-font text-uppercase">{{education.position}} <span class="place open-sans-font">{{education.company}}</span></h5>
+                        <p class="open-sans-font">Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit, </p>
+                    </li>
+                </ul>
+
+            </ng-container>
+            
+        </div>
+    </div>
+</div>
+<!-- Experience & Education Ends -->

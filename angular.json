@@ -27,7 +27,6 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/styles/circle.css",
               "src/styles.css"
             ],
             "scripts": []
