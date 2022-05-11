@@ -30,50 +30,9 @@ body {
     height: 100%;
     width: 100%;
 }
-
-
-
-
-@media (max-width: 576px) {
- 
-  /* .custom-title {
-    font-size: 21px;
-  } */
-
-  .main-content {
-    padding-bottom: 0;
-  }
-
-  .resume-box h5 {
-    font-size: 17px;
-  }
-
-  .box-stats {
-    padding: 15px 20px 20px 25px;
-  }
-
-  .c100 {
-    transform: scale(.8);
-  }
-
-  .box-stats.with-margin {
-    margin-bottom: 25px;
-  }
-
-  .box-stats h3 {
-    font-size: 40px;
-  }
-
-  .box-stats p {
-    padding-left: 0;
-  }
-
-  .box-stats p:before {
-    display: none;
-  }
+.layout {
+  @apply container pt-36 sm:pt-28 md:pt-0;
 }
-
-
 
 /* [ About Component ] */
 /*================================================== */

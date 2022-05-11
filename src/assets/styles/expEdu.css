@@ -1,6 +1,8 @@
 
 /* Resume */
-
+.expEduWrapper {
+  @apply grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-2 gap-4;
+}
 .resume-box ul {
     margin: 0;
     padding: 0;
