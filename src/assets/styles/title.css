@@ -1,0 +1,40 @@
+
+/* Title Section */
+
+.title-section {
+    @apply w-full md:relative fixed h-fit
+    inset-0 
+    md:bg-transparent bg-menuBg-dark
+    md:border-0 border-b-1 border-solid border-menuBg-300
+    mb-9 z-2
+    md:py-20 pt-4 pb-3
+    md:px-0 px-6 
+    md:my-0 md:mx-auto 
+    md:text-center text-left
+  }
+  .title-section h1 {
+    @apply md:text-5.5xl text-2.5xl font-black text-white uppercase m-0;
+  }
+  
+  .title-section h1 span {
+    @apply text-secondery;
+  }
+  .title-section hr {
+    @apply bg-secondery;
+  }
+  
+  .title-bg {
+    @apply hidden 
+    md:block md:text-8.5xl md:absolute md:inset-x-0 md:top-1/2 md:uppercase 
+    md:font-extrabold md:-translate-y-1/2 md:leading-3 md:tracking-10px md:text-titleBgRgba;
+  }
+  
+  .custom-title {
+    @apply text-xl pb-6 font-semibold uppercase
+    md:text-2.5xl 
+  }
+  .skills-custom-title {
+    @apply uppercase font-semibold text-xl md:text-2.5xl 
+    sm:text-center text-left sm:py-12 py-12 mb-3 sm:mb-0;
+  }
+  

@@ -1,0 +1,19 @@
+<!-- Page Title Starts -->
+<section class="title-section">
+    <h1>My <span>Skills</span></h1>
+    <span class="title-bg">Skills</span>
+</section>
+
+<hr class="separator">
+
+<!-- Skills Starts -->
+<div class="skills">
+    <div class="skills-card" *ngFor="let skill of skillsArray">
+        <div class="skills-img"><img src="{{skill.imgSrc}}" alt="{{skill.skillName}}"></div>
+        <div class="skills-name">
+            <p>{{skill.skillName}}</p>
+        </div>
+    </div>
+</div>
+
+<!-- Skills Ends -->

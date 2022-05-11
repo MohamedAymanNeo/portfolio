@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ExpEducationComponent } from './components/exp-education/exp-education.component';
 
 
 
@@ -19,6 +21,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     AboutComponent,
     HomeComponent,
     PortfolioComponent,
+    SkillsComponent,
+    ExpEducationComponent,
   ],
   imports: [
     CommonModule,
