@@ -9,9 +9,8 @@ export class ExpEducationComponent implements OnInit {
 
   eduExpArray = [
     {name: 'experience', icon:'fa fa-briefcase' ,experienceContent: [
-      {time: '2018- present', position: 'Web Developer', company: 'Envato'},
-      {time: '2013 - 2018', position: 'UI/UX Designer', company: 'Themeforest'},
-      {time: '2005 - 2013', position: 'Consultant', company: 'Videohive'},
+      {time: 'Feb.2020- present', position: 'Mid-Senior Frontend Developer', company: 'qTech (alqemam)'},
+      {time: 'Jun.2019 - Feb.2020', position: 'Junior Frontend Developer', company: 'Delta Soft'},
       
     ]},
     {name: 'education', icon:'fa fa-graduation-cap' ,educationContent: [

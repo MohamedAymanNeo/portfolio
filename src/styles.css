@@ -6,8 +6,10 @@
 @import 'assets/styles/title';
 @import 'assets/styles/header';
 @import 'assets/styles/home';
+@import 'assets/styles/about';
 @import 'assets/styles/skills';
 @import 'assets/styles/expEdu.css';
+@import 'assets/styles/portfolio.css';
 @font-face {
     font-family: "Merriweather-Regular";
     src: local("Merriweather-Regular"), url("assets/fonts/Merriweather-Regular.ttf") format("truetype");
@@ -17,6 +19,7 @@ html {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     height: 100%;
+    scrollbar-gutter: stable;
 }
 body {
     @apply bg-bgColor dark:bg-black;
@@ -33,89 +36,3 @@ body {
 .layout {
   @apply container pt-36 sm:pt-28 md:pt-0;
 }
-
-/* [ About Component ] */
-/*================================================== */
-/*** Aboutpage ***/
-.personalInfo {
-  width: 40%;
-}
-.stats {
-  display: flex;
-  flex-wrap: wrap;
-  width: 40%;
-  justify-content: flex-start;
-  align-items: center;
-}
-.main-content {
-  padding-bottom: 20px;
-}
-
-
-/* Personal Info List */
-
-.about-list li:not(:last-child) {
-  padding-bottom: 20px;
-}
-
-.about-list .title {
-  opacity: .8;
-  text-transform: capitalize;
-}
-
-.about-list .value {
-  font-weight: 600;
-}
-
-/* Box Stats */
-
-.box-stats {
-  padding: 20px 30px 25px 40px;
-  border-radius: 5px;
-  border: 1px solid #252525;
-}
-
-.box-stats {
-  @apply border-1 border-solid border-iconColor;
-}
-/* 
-.box-stats.with-margin {
-  margin-bottom: 30px;
-} */
-
-.box-stats h3 {
-  position: relative;
-  display: inline-block;
-  margin: 0;
-  font-size: 50px;
-  font-weight: 700;
-  color: #ffb400;
-}
-
-.box-stats h3:after {
-  content: '+';
-  position: absolute;
-  right: -24px;
-  font-size: 33px;
-  font-weight: 300;
-  top: 2px;
-}
-
-.box-stats p {
-  padding-left: 45px;
-}
-
-.box-stats p:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 13px;
-  width: 30px;
-  height: 1px;
-  background: #777;
-}
-
-
-
-/* [ End About Component ] */
-/*================================================== */

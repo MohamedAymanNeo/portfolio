@@ -7,18 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
   skillsArray = [
-    {imgSrc: 'assets/img/skill/html.png', skillName: 'html'},
-    {imgSrc: 'assets/img/skill/css.png', skillName: 'css'},
-    {imgSrc: 'assets/img/skill/javascript.png', skillName: 'javascript'},
-    {imgSrc: 'assets/img/skill/bootstrap.png', skillName: 'bootstrap'},
-    {imgSrc: 'assets/img/skill/jquery.png', skillName: 'jquery'},
-    {imgSrc: 'assets/img/skill/sass.png', skillName: 'sass'},
-    {imgSrc: 'assets/img/skill/wordpress.png', skillName: 'wordpress'},
-    {imgSrc: 'assets/img/skill/react.png', skillName: 'react'},
-    {imgSrc: 'assets/img/skill/github.png', skillName: 'github'},
-    {imgSrc: 'assets/img/skill/vscode.png', skillName: 'vscode'},
-    {imgSrc: 'assets/img/skill/photoshop.png', skillName: 'photoshop'},
-    {imgSrc: 'assets/img/skill/illustrator.png', skillName: 'illustrator'},
+    {imgSrc: 'assets/img/skill/html.svg', skillName: 'html'},
+    {imgSrc: 'assets/img/skill/css-3.svg', skillName: 'css'},
+    {imgSrc: 'assets/img/skill/javascript.svg', skillName: 'javascript'},
+    {imgSrc: 'assets/img/skill/bootstrap.svg', skillName: 'bootstrap'},
+    {imgSrc: 'assets/img/skill/jquery.svg', skillName: 'jquery'},
+    {imgSrc: 'assets/img/skill/sass.svg', skillName: 'sass'},
+    {imgSrc: 'assets/img/skill/tailwind-css-2.svg', skillName: 'tailwind'},
+    {imgSrc: 'assets/img/skill/angular-icon.svg', skillName: 'angular'},
+    {imgSrc: 'assets/img/skill/react.svg', skillName: 'react'},
+    {imgSrc: 'assets/img/skill/github.svg', skillName: 'github'},
+    {imgSrc: 'assets/img/skill/pug.svg', skillName: 'pug'},
+    {imgSrc: 'assets/img/skill/leetcode.svg', skillName: 'problem Solving'},
+    {imgSrc: 'assets/img/skill/vscode.svg', skillName: 'vscode'},
+    {imgSrc: 'assets/img/skill/photoshop.svg', skillName: 'photoshop'},
+    {imgSrc: 'assets/img/skill/illustrator.svg', skillName: 'illustrator'},
   ]
   constructor() { }
 

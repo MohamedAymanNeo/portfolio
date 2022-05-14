@@ -3,68 +3,78 @@
     <h1>ABOUT <span>ME</span></h1>
     <span class="title-bg">Resume</span>
 </section>
+
+<hr class="separator mb-12 hidden md:block">
+
+
 <!-- Page Title Ends -->
 <!-- Main Content Starts -->
 <section class="main-content">
-    <div class="">
-        <div class="flex items-center justify-center">
-            <!-- Personal Info Starts -->
-            <!-- <div class="personalInfo">
-                <div class="">
-                    <h3 class="custom-title">personal infos</h3>
-                </div>
-                <div class="sm:hidden block">
-                    <img src="img/img-mobile.jpg" class="img-fluid main-img-mobile" alt="my picture" />
-                </div>
-                <div class="columns-2">
-                    <ul class="about-list list-unstyled open-sans-font">
-                        <li> <span class="title">first name :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Steve</span> </li>
-                        <li> <span class="title">last name :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Milner</span> </li>
-                        <li> <span class="title">Age :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">27 Years</span> </li>
-                        <li> <span class="title">Nationality :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Tunisian</span> </li>
-                        <li> <span class="title">Freelance :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Available</span> </li>
-                    </ul>
-                    <ul class="about-list list-unstyled open-sans-font">
-                        <li> <span class="title">Address :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Tunis</span> </li>
-                        <li> <span class="title">phone :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">+21621184010</span> </li>
-                        <li> <span class="title">Email :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">you@mail.com</span> </li>
-                        <li> <span class="title">Skype :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">steve.milner</span> </li>
-                        <li> <span class="title">langages :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">French, English</span> </li>
-                    </ul>
-                </div>
-                <div class="mt-3">
-                    <a class="button" href="#">
-                        <span class="button-text">Download CV</span>
-                        <span class="button-icon fa fa-download"></span>
-                    </a>
-                </div>
-            </div> -->
-            <!-- Personal Info Ends -->
-            <!-- Boxes Starts -->
-            <!-- <div class="stats">
-                <div class="box-stats with-margin">
-                    <h3 class="poppins-font position-relative">12</h3>
-                    <p class="open-sans-font m-0 position-relative text-uppercase">years of <span class="d-block">experience</span></p>
-                </div>
-                <div class="box-stats with-margin">
-                    <h3 class="poppins-font position-relative">97</h3>
-                    <p class="open-sans-font m-0 position-relative text-uppercase">completed <span class="d-block">projects</span></p>
-                </div>
-                <div class="box-stats with-margin">
-                    <h3 class="poppins-font position-relative">81</h3>
-                    <p class="open-sans-font m-0 position-relative text-uppercase">Happy<span class="d-block">customers</span></p>
-                </div>
-                <div class="box-stats with-margin">
-                    <h3 class="poppins-font position-relative">53</h3>
-                    <p class="open-sans-font m-0 position-relative text-uppercase">awards <span class="d-block">won</span></p>
-                </div>
-            </div> -->
-            <!-- Boxes Ends -->
+    <!-- Personal Info Starts -->
+    <div class="personalInfo">
+        <h3 class="custom-title">personal infos</h3>
+        <div class="sm:hidden block">
+            <img src="assets/img/3.jpg" class="about-img-mobile" alt="my picture" />
         </div>
-        
-        
-        <hr class="separator mt-1">
-        
+        <div class="personalInfo-lists" >
+            <ul class="about-list"  *ngFor="let personal of personalInfo">
+                <ng-container *ngIf="personal.type == 'first'">
+                    <li class="flex flex-col lg:flex-row lg:justify-start" *ngFor="let item of personal.personalFirstList"> 
+                        <span class="title">{{item.title}}</span> 
+                        <span class="value">{{item.value}}</span> 
+                    </li>
+                </ng-container>
+                <ng-container *ngIf="personal.type == 'second'">
+                    <li class="flex flex-col lg:flex-row lg:justify-start" *ngFor="let item of personal.personalSecondList"> 
+                        <span class="title">{{item.title}}</span> 
+                        <span class="value">{{item.value}}</span> 
+                    </li>
+                </ng-container>
+            </ul>
+        </div>
+        <div class="mt-5">
+            <a class="button" href="#">
+                <span class="button-text">Download CV</span>
+                <span class="button-icon fa fa-download"></span>
+            </a>
+        </div>
+    </div>
+    <hr class="separator mb-12 block md:hidden">
+    <!-- Personal Info Ends -->
+    <div class="education-box">
+        <h3 class="custom-title">education</h3>
+        <ul>
+            <li *ngFor="let education of educationContent">
+                <div class="icon">
+                    <i class="fa fa-graduation-cap"></i>
+                </div>
+                <span class="time">{{education.time}}</span>
+                <h5 class="">{{education.position}} <span class="place">{{education.company}}</span></h5>
+                <p class="">{{education.content}}</p>
+            </li>
+        </ul>
     </div>
 </section>
 <!-- Main Content Ends -->
+
+
+<!-- Boxes Starts -->
+        <!-- <div class="stats">
+            <div class="box-stats with-margin">
+                <h3 class="poppins-font position-relative">12</h3>
+                <p class="open-sans-font m-0 position-relative text-uppercase">years of <span class="d-block">experience</span></p>
+            </div>
+            <div class="box-stats with-margin">
+                <h3 class="poppins-font position-relative">97</h3>
+                <p class="open-sans-font m-0 position-relative text-uppercase">completed <span class="d-block">projects</span></p>
+            </div>
+            <div class="box-stats with-margin">
+                <h3 class="poppins-font position-relative">81</h3>
+                <p class="open-sans-font m-0 position-relative text-uppercase">Happy<span class="d-block">customers</span></p>
+            </div>
+            <div class="box-stats with-margin">
+                <h3 class="poppins-font position-relative">53</h3>
+                <p class="open-sans-font m-0 position-relative text-uppercase">awards <span class="d-block">won</span></p>
+            </div>
+        </div> -->
+        <!-- Boxes Ends -->
