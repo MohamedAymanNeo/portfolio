@@ -1,1 +1,22 @@
-<p>portfolio works!</p>
+<!-- Page Title Starts -->
+<section class="title-section">
+    <h1>Portfolio</h1>
+    <span class="title-bg">Portfolio</span>
+</section>
+
+<hr class="separator mb-12 hidden md:block">
+
+<div class="grid grid-cols-4 gap-4">
+    <div class="port-card" *ngFor="let project of portfolioProjects">
+        <div class="port-img"><img src="{{project.imgSrc}}" alt="portfolio"></div>
+        <div class="port-oly">
+            <div class="port-btn">
+                <a class="btn btn-inline" href="#">live preview</a>
+                <a class="btn btn-inline" href="#">view details</a>
+            </div>
+            <div class="port-text">
+                <h6>{{project.projectName}}</h6>
+            </div>
+        </div>
+    </div>
+</div>

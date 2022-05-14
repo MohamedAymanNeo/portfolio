@@ -54,6 +54,7 @@ module.exports = {
         '1':'1px'
       },
       fontSize: {
+        '15px': '15px',
         '5.5xl': '3.5rem',
         '2.5xl': '1.625rem',
         '8.5xl': '6.875rem',
@@ -73,6 +74,7 @@ module.exports = {
       },
       height: {
         '1px':'1px',
+        '2px':'2px',
         'cst':'3.2rem',
         '2full': '200%',
         '55px':'55px',

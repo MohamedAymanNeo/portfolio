@@ -1,6 +1,6 @@
 <!-- Page Title Starts -->
 <section class="title-section">
-    <h1>Experience <span>&</span>Education</h1>
+    <h1>Experience</h1>
     <span class="title-bg">About Me</span>
 </section>
 
@@ -16,26 +16,12 @@
                         <div class="icon">
                             <i class="{{type.icon}}"></i>
                         </div>
-                        <span class="time open-sans-font text-uppercase">{{experience.time}}</span>
-                        <h5 class="poppins-font text-uppercase">{{experience.position}} <span class="place open-sans-font">{{experience.company}}</span></h5>
-                        <p class="open-sans-font">Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit, </p>
+                        <span class="time">{{experience.time}}</span>
+                        <h5 class="">{{experience.position}} <span class="place">{{experience.company}}</span></h5>
+                        <!-- <p class="">Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit, </p> -->
                     </li>
                 </ul>
             </ng-container>
-            <ng-container *ngIf="type.name == 'education'">
-                <ul>
-                    <li *ngFor="let education of type.educationContent">
-                        <div class="icon">
-                            <i class="{{type.icon}}"></i>
-                        </div>
-                        <span class="time open-sans-font text-uppercase">{{education.time}}</span>
-                        <h5 class="poppins-font text-uppercase">{{education.position}} <span class="place open-sans-font">{{education.company}}</span></h5>
-                        <p class="open-sans-font">Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit, </p>
-                    </li>
-                </ul>
-
-            </ng-container>
-            
         </div>
     </div>
 </div>

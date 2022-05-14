@@ -1,93 +1,42 @@
 
-/* Resume */
-.expEduWrapper {
-  @apply grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-2 gap-4;
+/* Education & Experience */
+.education-box ul {
+  @apply m-0 p-0 list-none grid grid-cols-1 gap-4;
 }
 .resume-box ul {
-  @apply m-0 p-0 list-none
-  }
+  @apply m-0 p-0 list-none grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-2 gap-4;
+}
+
+.education-box li,
+.resume-box li {
+  @apply relative mb-12 pr-5 pl-14 
   
-  .resume-box li {
-    position: relative;
-    padding: 0 20px 0 60px;
-    margin: 0 0 50px;
-  }
-  
-  .resume-box li:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 20px;
-    bottom: 0;
-    border-left: 1px solid #333;
-  }
-  
-  .resume-box .icon {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    line-height: 40px;
-    text-align: center;
-    z-index: 1;
-    border-radius: 50%;
-    color: #fff;
-    background-color: #252525;
-    background-color: #ffb400;
-  }
-  
-  .resume-box .time {
-    color: #fff;
-    font-size: 12px;
-    padding: 1px 10px;
-    display: inline-block;
-    margin-bottom: 12px;
-    border-radius: 20px;
-    font-weight: 600;
-    background-color: #252525;
-    opacity: .8;
-  }
-  
-  .resume-box h5 {
-    font-size: 18px;
-    margin: 7px 0 10px;
-  }
-  
-  .resume-box p {
-    margin: 0;
-    color: #eee;
-    font-size: 14px;
-  }
-  
-  .resume-box .place {
-    opacity: .8;
-    font-weight: 600;
-    font-size: 15px;
-    position: relative;
-    padding-left: 26px;
-  }
-  
-  .resume-box .place:before {
-    position: absolute;
-    content: '';
-    width: 10px;
-    height: 2px;
-    background-color: #fff;
-    left: 7px;
-    top: 9px;
-    opacity: .8;
-  }
-  
-  .resume-box .time,
-  .resume-box p {
-    color: #666;
-  }
-  
-  .resume-box .place:before {
-    background-color: #666;
-  }
-  
-  .resume-box li:after {
-    border-left: 1px solid #ddd;
-  }
+  after:content-[''] after:absolute after:inset-y-0
+  after:left-5 after:border-1 after:border-solid after:border-menuBg-300;
+}
+
+.education-box .icon,
+.resume-box .icon {
+  @apply w-10 h-10 absolute inset-x-0 leading-10 text-center z-1 
+  rounded-50% text-white bg-secondery;
+}
+.education-box .time,
+.resume-box .time {
+  @apply text-white text-xs inline-block mb-3 rounded-2xl uppercase
+  opacity-80 bg-menuBg-dark font-semibold py-1 px-2;
+}
+.education-box h5,
+.resume-box h5 {
+  @apply text-lg mx-0 my-2 uppercase;
+}
+.education-box p,
+.resume-box p {
+  @apply m-0 text-menuBg-light text-sm;
+}
+.education-box .place,
+.resume-box .place {
+  @apply opacity-80 font-semibold relative pl-8
+  /* Before */
+  before:content-[''] before:absolute before:w-3 before:h-2px 
+  before:bg-white before:left-2 before:top-3 before:opacity-80 before:text-15px;
+}
