@@ -6,7 +6,52 @@
 
 <hr class="separator mb-12 hidden md:block">
 
-<div class="grid grid-cols-4 gap-4">
+<div class="projects">
+    <ng-container *ngFor="let type of portfolioParts">
+        <div class="projectType" ngClass="{{type.class}}">
+            <header class="projectType-header">
+                <h2>
+                    <span class="projectType-header-title">{{type.name}}</span>
+                    <span class="projectType-header-subtitle">{{type.subtitle}}</span>
+                </h2>
+            </header>
+            
+            <ol class="projectType-body">
+                <ng-container *ngFor="let project of type.areaProjects">
+                    <li class="project" [attr.aria-label]="project.projectTime">
+                        <div class="project-thumbnail">
+                            <img src="{{project.projectImg}}" alt="">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">
+                                <a href="#">
+                                    <span>{{project.projectTitle}}</span>
+                                </a>
+                            </h3>
+                            <p class="project-skills">{{project.projectSkills}}</p>
+                            <p class="project-summary">{{project.projectSummary}}</p>
+                            <div class="project-links">
+                                <a href="" target="_blank">
+                                    live
+                                </a>
+                                <a href="" target="_blank">
+                                    source
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ng-container>
+            </ol>
+            <footer class="projectType-footer">
+                <a href="" target="_blanck">
+                    <i class="fa fas-github"></i>
+                    <span>browse all in github</span>
+                </a>
+            </footer>
+        </div>
+    </ng-container>
+</div>
+<!-- <div class="grid grid-cols-3 gap-4">
     <div class="port-card" *ngFor="let project of portfolioProjects">
         <div class="port-img"><img src="{{project.imgSrc}}" alt="portfolio"></div>
         <div class="port-oly">
@@ -19,4 +64,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
