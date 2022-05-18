@@ -32,6 +32,7 @@ module.exports = {
           300: '#333'
         },
         menuTextColor: '#666',
+        danger: '#d8532b',
       },
       zIndex:  {
         '3': '3',
