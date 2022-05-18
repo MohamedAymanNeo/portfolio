@@ -70,7 +70,6 @@
     before:duration-300 before:ease-out before:transition-all before:translate-x-full
     /* Hover */
     hover:before:translate-x-0 py-4 pr-18 pl-9;
-    /* padding: 16px 70px 16px 35px; */
     font-size: 15px;
   }
   
