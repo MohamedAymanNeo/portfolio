@@ -33,6 +33,8 @@ body {
     height: 100%;
     width: 100%;
 }
+
+
 .layout {
   @apply container pt-36 sm:pt-28 md:pt-0;
 }
