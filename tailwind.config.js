@@ -23,6 +23,7 @@ module.exports = {
         hoverColor: '#f7c9c9',
         linkColor: '#25232d',
         secondery: '#ffb400',
+        seconderyDark: '#c39423',
         customBg: '#2b2a2a',
         iconColor: '#ddd',
         titleBgRgba: '#ffffff12',
@@ -33,6 +34,7 @@ module.exports = {
         },
         menuTextColor: '#666',
         danger: '#d8532b',
+        dangerDark: '#ed886a',
       },
       zIndex:  {
         '3': '3',

@@ -47,15 +47,66 @@
 .projectType-body {
     display: flex;
     flex-direction: column;
+    /* max-height: 390px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #6969dd #e0e0e0; */
+}
+
+.projectType-wrapper {
+    display: flex;
     max-height: 390px;
     overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #6969dd #e0e0e0;
 }
+
+
+.projectType-wrapper::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Styling Project */
+.projectType-wrapper.styling {
+    @apply border-4 border-solid border-seconderyDark border-r-0; 
+}
+
+.projectType-wrapper.styling::-webkit-scrollbar-track {
+    @apply bg-seconderyDark;
+}
+.projectType-wrapper.styling::-webkit-scrollbar-thumb {
+    @apply bg-secondery rounded-md;
+}
+
+.projectType-wrapper.websites {
+    @apply border-4 border-solid border-dangerDark border-r-0; 
+}
+.projectType-wrapper.websites::-webkit-scrollbar-track {
+    @apply bg-dangerDark;
+}
+.projectType-wrapper.websites::-webkit-scrollbar-thumb {
+    @apply bg-danger rounded-md;
+}
+/* Recent Project */
+.projectType-wrapper.recent {
+    @apply border-4 border-solid border-neutral-200 border-r-0; 
+}
+
+.projectType-wrapper.recent::-webkit-scrollbar-track {
+    @apply bg-neutral-200;
+}
+.projectType-wrapper.recent::-webkit-scrollbar-thumb {
+    @apply bg-neutral-400 rounded-md;
+}
+
 .projectType-footer {
     height: 24px;
     text-align: center;
     border-radius: 0 4px 4px 0;
     line-height: 1.3;
 }
+
+
 
 .project {
     position: relative;
