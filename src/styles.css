@@ -10,10 +10,6 @@
 @import 'assets/styles/skills';
 @import 'assets/styles/expEdu.css';
 @import 'assets/styles/portfolio.css';
-@font-face {
-    font-family: "Merriweather-Regular";
-    src: local("Merriweather-Regular"), url("assets/fonts/Merriweather-Regular.ttf") format("truetype");
-}
 html {
     @apply overflow-x-hidden h-full;
     font-family: 'Poppins', sans-serif;
