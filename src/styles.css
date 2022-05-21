@@ -15,25 +15,13 @@
     src: local("Merriweather-Regular"), url("assets/fonts/Merriweather-Regular.ttf") format("truetype");
 }
 html {
-    /* @apply font-body; */
+    @apply overflow-x-hidden h-full;
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-    height: 100%;
     scrollbar-gutter: stable;
 }
 body {
-    @apply bg-bgColor dark:bg-black;
-    font-size: 15px;
-    color: #fff;
-    font-weight: 500;
-    line-height: 1.6;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
+    @apply text-white bg-bgColor font-medium leading-relaxed relative h-full w-full;
 }
-
 
 .layout {
   @apply container pt-36 sm:pt-28 md:pt-0;

@@ -38,10 +38,6 @@
     @apply bg-recentDark text-white;
 }
 
-
-
-
-
 .projects .projectType {
     @apply rounded flex flex-col shadow text-projectText;
 }
@@ -106,8 +102,6 @@
     @apply h-8 text-center leading-loose;
 }
 
-
-
 .project {
     @apply relative flex max-h-120px mb-3 
     odd:bg-projectOdd even:bg-projectEven
@@ -151,7 +145,7 @@
     @apply text-base bg-white rounded-sm select-none font-normal whitespace-nowrap
     /* before */
     first:before:content-['•'] first:before:relative first:before:text-base first:before:leading-0
-    first:before:top-3px first:before:-left-3px ;
+    first:before:top-0 first:before:-left-3px ;
     color: rgba(0, 0, 0, 0.58);
     padding: 0 0.5em 0.1em;
     -webkit-user-drag: none;
@@ -171,57 +165,4 @@
 }
 .recent .project:hover::before {
     @apply  text-recentDark opacity-100;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.port-card {
-    @apply my-0 mx-4 rounded-lg relative;
-}
-.port-img img {
-    @apply w-full rounded-lg;
-}
-.port-oly {
-    @apply absolute top-0 left-0 w-full h-full 
-    flex flex-col justify-evenly items-start
-    rounded-lg  duration-300 ease-linear transition-all scale-0 bg-black bg-opacity-60;
-}
-.port-card:hover .port-oly {
-    @apply scale-100 origin-center;
-
-}
-.port-btn {
-    @apply flex flex-col items-center justify-center w-full;
-}
-.port-btn .btn {
-    @apply text-sm font-medium py-2 px-6 capitalize my-3 rounded tracking-wider transition-all ease-linear duration-300;
-}
-.port-btn .btn-inline {
-    @apply bg-white text-danger;
-}
-.port-btn .btn-inline:hover {
-    @apply text-white bg-secondery;
-}
-.port-text h6 {
-    @apply text-white font-medium capitalize ml-8 relative tracking-wider
-    /* before */
-    before:absolute before:content-['']
-    before:top-0 before:-left-4 before:w-1 before:h-full before:bg-secondery ;
 }
