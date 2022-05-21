@@ -7,14 +7,9 @@
 /*** Navigation ***/
 
 .header {
-    @apply fixed right-12 bottom-0 z-3 flex items-center top-28 opacity-100 transition-opacity duration-300;
+    @apply fixed xl:right-12 lg:right-4 bottom-0 z-3 flex items-center top-28 opacity-100 transition-opacity duration-300;
     height: calc(100vh - 200px);
 }
-
-/* .header.hide-header {
-  z-index: 0 !important;
-  opacity: 0;
-} */
 
 .header .icon-menu {
     @apply m-0 p-0 hidden lg:block;

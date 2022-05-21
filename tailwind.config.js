@@ -19,6 +19,7 @@ module.exports = {
       },
       colors: {
         bgColor: '#111',
+        linkBgColor: '#777',
         textColor: '#33272a',
         hoverColor: '#f7c9c9',
         linkColor: '#25232d',
@@ -35,6 +36,11 @@ module.exports = {
         menuTextColor: '#666',
         danger: '#d8532b',
         dangerDark: '#ed886a',
+        recent: '#a3b4e2',
+        recentDark: '#879cd5',
+        projectText: '#0000008a',
+        projectOdd: '#FEFEFE',
+        projectEven: '#F5F5F5'
       },
       zIndex:  {
         '3': '3',
@@ -48,20 +54,26 @@ module.exports = {
         '40%':'40%',
         '32%':'32%',
         '15%':'15%',
+        '2px':'2px',
+        '3px':'3px',
       },
       lineHeight: {
         '0':'0',
         '12': '3rem',
-        '14': '4rem'
+        '14': '4rem',
+        '1.3': '1.3'
+
       },
       borderWidth: {
         '1':'1px'
       },
       fontSize: {
         '15px': '15px',
+        '9px': '9px',
         '5.5xl': '3.5rem',
         '2.5xl': '1.625rem',
         '8.5xl': '6.875rem',
+        '50%': '50%'
       },
       letterSpacing: {
         '10px': '0.625rem'
@@ -75,6 +87,18 @@ module.exports = {
         'cst':'3.2rem',
         '600px':'38rem',
         '55px':'55px',
+      },
+      maxWidth: {
+        '75px': '75px',
+        '125px': '125px',
+        '35ch': '35ch'
+      },
+      minWidth: {
+        '15px': '15px',
+      },
+      maxHeight: {
+        '120px': '120px',
+        '390px': '390px'
       },
       height: {
         '1px':'1px',
