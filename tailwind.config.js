@@ -19,6 +19,7 @@ module.exports = {
       },
       colors: {
         bgColor: '#111',
+        linkBgColor: '#777',
         textColor: '#33272a',
         hoverColor: '#f7c9c9',
         linkColor: '#25232d',
@@ -89,6 +90,7 @@ module.exports = {
       },
       maxWidth: {
         '75px': '75px',
+        '125px': '125px',
         '35ch': '35ch'
       },
       minWidth: {

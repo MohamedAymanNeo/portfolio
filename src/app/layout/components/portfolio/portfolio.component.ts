@@ -124,7 +124,7 @@ export class PortfolioComponent implements OnInit {
 
       name: 'Projects area', 
       class:'websites',
-      subtitle: 'daily practice',
+      subtitle: 'these were hard times ◕‸◕',
       footerContent:'browsing all in github',
       areaProjects: [
         {projectImg: 'assets/img/projects/project-1.jpg',
@@ -165,7 +165,7 @@ export class PortfolioComponent implements OnInit {
 
       name: 'recent projects', 
       class:'recent',
-      subtitle: 'daily practice',
+      subtitle: 'selected ones',
       footerContent:'browsing all in github',
       areaProjects: [
         {projectImg: 'assets/img/projects/project-1.jpg',
@@ -213,17 +213,6 @@ export class PortfolioComponent implements OnInit {
   ]
 
 
-  portfolioProjects = [
-    {imgSrc: 'assets/img/projects/project-1.jpg', projectName: 'Image Project'},
-    {imgSrc: 'assets/img/projects/project-2.jpg', projectName: 'Image Project'},
-    {imgSrc: 'assets/img/projects/project-3.jpg', projectName: 'Image Project'},
-    {imgSrc: 'assets/img/projects/project-4.jpg', projectName: 'Image Project'},
-    {imgSrc: 'assets/img/projects/project-5.jpg', projectName: 'Image Project'},
-    {imgSrc: 'assets/img/projects/project-6.jpg', projectName: 'Image Project'},
-    {imgSrc: 'assets/img/projects/project-7.jpg', projectName: 'Image Project'},
-    {imgSrc: 'assets/img/projects/project-8.jpg', projectName: 'Image Project'},
-    {imgSrc: 'assets/img/projects/project-9.jpg', projectName: 'Image Project'}
-  ]
   constructor() { }
 
   ngOnInit(): void {
