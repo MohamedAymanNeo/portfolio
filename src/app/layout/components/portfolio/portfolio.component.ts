@@ -14,7 +14,7 @@ export class PortfolioComponent implements OnInit {
       subtitle: 'daily practice',
       footerContent:'browsing all in github',
       areaProjects: [
-        {projectImg: 'assets/img/projects/project-1.jpg',
+        {projectImg: 'assets/img/projects/mainMenu.gif',
          projectTitle: 'Services Section (Challenge)',
          projectSkills: 'HTML5, CSS3, SASS/SCSS',
          projectSummary: 'This work has been featured on CodePen ❤',
@@ -22,7 +22,7 @@ export class PortfolioComponent implements OnInit {
          projectSource: 'source',
          projectTime: '2020',
         },
-        {projectImg: 'assets/img/projects/project-1.jpg',
+        {projectImg: 'assets/img/projects/memoryGame.gif',
          projectTitle: 'Services Section (Challenge)',
          projectSkills: 'HTML5, CSS3, SASS/SCSS',
          projectSummary: 'This work has been featured on CodePen ❤',

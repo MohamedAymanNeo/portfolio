@@ -118,13 +118,14 @@
 }
 .project-thumbnail {
     @apply relative;
+    width: 180px;
     box-shadow: 0.1em 0 10px rgb(0 0 0 / 15%);
 }
 .project-thumbnail a{
     @apply block w-28 h-28 relative;
 }
 .project-thumbnail img{
-    @apply w-full h-full object-cover;
+    @apply w-full h-full;
 }
 .project-content {
     padding: 0.4em 1em 0.5em;
