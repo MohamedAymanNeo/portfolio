@@ -112,6 +112,7 @@
     before:min-w-15px before:h-4 before:leading-4 before:border-1 before:border-solid
      before:z-1 before:py-0 before:px-1;
 }
+
 .project::before {
     transition: all 200ms ease;
     box-shadow: 2px 2px;
