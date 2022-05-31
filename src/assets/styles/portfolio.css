@@ -112,19 +112,21 @@
     before:min-w-15px before:h-4 before:leading-4 before:border-1 before:border-solid
      before:z-1 before:py-0 before:px-1;
 }
+
 .project::before {
     transition: all 200ms ease;
     box-shadow: 2px 2px;
 }
 .project-thumbnail {
     @apply relative;
+    width: 180px;
     box-shadow: 0.1em 0 10px rgb(0 0 0 / 15%);
 }
 .project-thumbnail a{
     @apply block w-28 h-28 relative;
 }
 .project-thumbnail img{
-    @apply w-full h-full object-cover;
+    @apply w-full h-full;
 }
 .project-content {
     padding: 0.4em 1em 0.5em;
