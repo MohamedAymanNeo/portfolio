@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   links= [
-    {icon: 'fa fa-home', link: '/home', linkName: 'Home'},
+    {icon: 'fa fa-home', link: '/', linkName: 'Home'},
     {icon: 'fa fa-user', link: '/about', linkName: 'About'},
     {icon: 'fa fa-briefcase', link: '/experience', linkName: 'Experience'},
     {icon: 'fa fa-lightbulb-o', link: '/skills', linkName: 'Skills'},
