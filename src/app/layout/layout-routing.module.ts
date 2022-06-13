@@ -13,11 +13,6 @@ const routes: Routes = [
     component: LayoutComponent,
     
     children: [
-      // {
-      //   path: '',
-      //   redirectTo: 'home',
-      //   pathMatch: 'full'
-      // },
       {
         path: '',
         component: HomeComponent
