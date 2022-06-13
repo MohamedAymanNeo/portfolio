@@ -2,7 +2,7 @@
 <header class="header" id="navbar-collapse-toggle">
   <!-- Fixed Navigation Starts -->
   <ul class="icon-menu d-none d-lg-block">
-      <li class="icon-box" routerLinkActive="active" *ngFor="let item of links">
+      <li class="icon-box" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true }" *ngFor="let item of links">
         <!-- <img src="{{item.icon}}" alt=""> -->
           <i class="{{item.icon}}"></i>
           <a class="linkText" routerLink="{{item.link}}">
@@ -19,7 +19,7 @@
           <span></span>
           <span></span>
           <ul class="list-unstyled" id="menu">
-              <li routerLinkActive="active" *ngFor="let item of links">
+              <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true  }" *ngFor="let item of links">
                 <a routerLink="{{item.link}}">
                     <!-- <img src="{{item.icon}}" alt=""> -->
                   <i class="{{item.icon}}"></i>
