@@ -1,0 +1,85 @@
+
+/* [ About Component ] */
+/*================================================== */
+/*** Aboutpage ***/
+.main-content {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+    padding-bottom: 20px;
+}
+
+.about-img-mobile {
+    @apply block sm:hidden border-4 border-solid 
+    border-menuBg-dark rounded-50% mx-auto mt-0 mb-6 object-cover object-top;
+    width: 270px;
+    height: 270px;
+}
+  
+  .personalInfo-lists {
+    @apply grid grid-cols-2 gap-4;
+  }
+  /* Personal Info List */
+  .about-list li:not(:last-child) {
+    @apply pb-5;
+  }
+  .about-list .title {
+    @apply opacity-80 capitalize;
+  }
+  
+  .about-list .value {
+    @apply font-semibold break-all ml-1 w-36;
+  }
+  
+  /* Box Stats */
+
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .box-stats {
+    padding: 20px 30px 25px 40px;
+    border-radius: 5px;
+    border: 1px solid #252525;
+  }
+  
+  .box-stats {
+    @apply border-1 border-solid border-iconColor;
+  }
+  
+  .box-stats h3 {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffb400;
+  }
+  
+  .box-stats h3:after {
+    content: '+';
+    position: absolute;
+    right: -24px;
+    font-size: 33px;
+    font-weight: 300;
+    top: 2px;
+  }
+  
+  .box-stats p {
+    padding-left: 45px;
+  }
+  
+  .box-stats p:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 30px;
+    height: 1px;
+    background: #777;
+  }
+  
+  /* [ End About Component ] */
+  /*================================================== */

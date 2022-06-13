@@ -1,0 +1,88 @@
+
+/* [ Home Component ] */
+/*================================================== */
+/*** Homepage ***/
+
+.color-block {
+    transform: rotate(-15deg);
+    left: -83%;
+    @apply bg-secondery fixed w-full h-2full -top-1/2 hidden lg:block;
+  }
+  
+  .bg {
+    @apply xl:w-600px w-80 bg-cover bg-top bg-no-repeat z-50 left-10 top-10 rounded-4xl
+    fixed lg:block hidden;
+    background-image: url('../img/3.jpg');
+    height: calc(100vh - 80px);
+    box-shadow: 0 0 7px rgba(0,0,0,.9);
+  }
+  
+  .container-home {
+    @apply flex items-center min-h-full;
+  }
+  .home-details {
+    @apply fixed 
+    lg:top-32% 
+    xl:left-1/2 lg:left-42% 
+    sm:left-28 top-15% sm:p-0 px-6;
+  }
+  .home-details > div {
+    @apply mx-auto my-0 lg:text-left sm:text-center;
+    max-width: 550px;
+  }
+  .main-img-mobile {
+    @apply hidden sm:block lg:hidden border-4 border-solid 
+    border-menuBg-dark rounded-50% mx-auto mt-0 mb-6 object-cover object-top;
+    width: 270px;
+    height: 270px;
+  }
+  .home-details h1 {
+    @apply font-bold leading-normal relative text-secondery mx-0 mt-4 mb-2 
+    xl:pl-14 lg:pl-0 text-4xl uppercase sm:text-center text-left lg:text-left
+    /* Before */
+    before:content-['']
+    before:absolute before:left-0 before:top-7 before:h-1 
+    before:w-10 before:rounded-lg before:bg-secondery 
+    before:xl:block before:lg:hidden before:hidden;
+  }
+  
+  .home-details h1 span {
+    @apply block text-white text-3xl;
+  }
+  
+  .home-details h6 {
+    @apply font-normal block text-menuBg-light;
+    font-size: 22px;
+  }
+  
+  .home-details p {
+    @apply leading-9 text-xl mx-0 mt-4 mb-7;
+  }
+   
+  /*** Buttons ***/
+  .button {
+    @apply overflow-hidden inline-block rounded-5xl whitespace-nowrap text-ellipsis 
+    text-center cursor-pointer align-middle select-none uppercase
+    relative bg-transparent text-white font-semibold outline-none z-1 no-underline duration-300 transition-all ease-in-out
+    border-1 border-solid border-secondery
+    /* Before */
+    before:content-[''] before:-z-1 before:absolute before:inset-0 before:bg-secondery 
+    before:duration-300 before:ease-out before:transition-all before:translate-x-full
+    /* Hover */
+    hover:before:translate-x-0 py-4 pr-18 pl-9;
+    font-size: 15px;
+  }
+  
+  .button .button-text {
+    @apply relative z-3 text-white duration-300 ease-in-out transition-all;
+  }
+  
+  .button:hover .button-text {
+    @apply text-white;
+  }
+  .button-icon {
+    @apply absolute -right-0.5 inset-y-0 flex items-center justify-center text-white bg-secondery rounded-50% w-55px h-55px text-lg leading-0;
+  }
+  /* [ End Home Component ] */
+  /*================================================== */
+  

@@ -1,0 +1,170 @@
+.projects {
+    @apply grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3;
+}
+.styling {
+    @apply bg-secondery;
+}
+.styling .project-skills {
+    @apply text-secondery;
+}
+.websites {
+    @apply bg-danger;
+}
+.websites .project-skills {
+    @apply text-danger;
+}
+.recent {
+    @apply bg-recentDark;
+}
+.recent .project-skills {
+    @apply text-recentDark;
+}
+
+.project:hover .project-links a:last-child {
+    @apply bg-linkBgColor text-white
+}
+.project:hover .project-title a {
+    @apply underline;
+}
+
+/* Hover Project */
+.styling .project:hover .project-links a:first-child {
+    @apply bg-secondery text-white;
+}
+.websites .project:hover .project-links a:first-child {
+    @apply bg-danger text-white;
+}
+.recent .project:hover .project-links a:first-child {
+    @apply bg-recentDark text-white;
+}
+
+.projects .projectType {
+    @apply rounded flex flex-col shadow text-projectText;
+}
+
+.projectType-header {
+    @apply flex items-center justify-center py-2 px-4 relative rounded-t-md h-20;
+}
+.projectType-header h2 {
+    @apply flex justify-between items-center w-full;
+}
+.projectType-header-title {
+    @apply text-white relative max-w-75px text-base font-bold -top-2px tracking-tight;
+}
+.projectType-header-subtitle {
+    @apply text-sm bg-white rounded-sm max-w-125px border-solid py-1 px-2 border-1 font-thin text-black;
+    box-shadow: 3px 3px;
+
+}
+.projectType-body {
+    @apply flex flex-col;
+}
+
+.projectType-wrapper {
+    @apply flex overflow-y-auto max-h-390px;
+    scrollbar-width: thin;
+}
+.projectType-wrapper::-webkit-scrollbar {
+    @apply w-2;
+}
+/* Styling Project */
+.projectType-wrapper.styling {
+    @apply border-4 border-solid border-seconderyDark border-r-0; 
+}
+
+.projectType-wrapper.styling::-webkit-scrollbar-track {
+    @apply bg-seconderyDark;
+}
+.projectType-wrapper.styling::-webkit-scrollbar-thumb {
+    @apply bg-secondery rounded-md;
+}
+
+.projectType-wrapper.websites {
+    @apply border-4 border-solid border-dangerDark border-r-0; 
+}
+.projectType-wrapper.websites::-webkit-scrollbar-track {
+    @apply bg-dangerDark;
+}
+.projectType-wrapper.websites::-webkit-scrollbar-thumb {
+    @apply bg-danger rounded-md;
+}
+/* Recent Project */
+.projectType-wrapper.recent {
+    @apply border-4 border-solid border-recent border-r-0; 
+}
+.projectType-wrapper.recent::-webkit-scrollbar-track {
+    @apply bg-recent;
+}
+.projectType-wrapper.recent::-webkit-scrollbar-thumb {
+    @apply bg-recentDark rounded-r ;
+}
+.projectType-footer {
+    @apply h-8 text-center leading-loose;
+}
+
+.project {
+    @apply relative flex max-h-120px mb-3 
+    odd:bg-projectOdd even:bg-projectEven
+    /* before */
+    before:content-[attr(aria-label)]
+    before:absolute before:bottom-0 before:right-0 
+    before:text-center before:m-3 before:rounded-sm before:opacity-40 before:text-9px 
+    before:min-w-15px before:h-4 before:leading-4 before:border-1 before:border-solid
+     before:z-1 before:py-0 before:px-1;
+}
+
+.project::before {
+    transition: all 200ms ease;
+    box-shadow: 2px 2px;
+}
+.project-thumbnail {
+    @apply relative;
+    width: 180px;
+    box-shadow: 0.1em 0 10px rgb(0 0 0 / 15%);
+}
+.project-thumbnail a{
+    @apply block w-28 h-28 relative;
+}
+.project-thumbnail img{
+    @apply w-full h-full;
+}
+.project-content {
+    padding: 0.4em 1em 0.5em;
+    overflow: hidden;
+}
+.project-title {
+    @apply text-sm whitespace-nowrap overflow-hidden font-bold text-ellipsis tracking-tighter text-projectText;
+}
+.project-skills {
+    @apply text-xs leading-snug font-bold tracking-widest whitespace-nowrap overflow-hidden text-ellipsis;
+}
+.project-summary {
+    @apply text-xs font-thin relative overflow-hidden h-8 leading-snug max-w-35ch mb-2;
+    padding-top: 0.1rem;
+}
+.project-links {@apply inline-flex;}
+.project-links a{
+    @apply text-base bg-white rounded-sm select-none font-normal whitespace-nowrap
+    /* before */
+    first:before:content-['•'] first:before:relative first:before:text-base first:before:leading-0
+    first:before:top-0 first:before:-left-3px ;
+    color: rgba(0, 0, 0, 0.58);
+    padding: 0 0.5em 0.1em;
+    -webkit-user-drag: none;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 13%);
+    transition: all 150ms ease, transform 0s;
+    letter-spacing: -0.02em;
+}
+.project-links a:not(:last-child){
+    margin-right: 0.75rem;
+}
+
+.styling .project:hover:before {
+    @apply  text-secondery opacity-100;
+}
+.websites .project:hover::before {
+    @apply  text-danger opacity-100;
+}
+.recent .project:hover::before {
+    @apply  text-recentDark opacity-100;
+}
