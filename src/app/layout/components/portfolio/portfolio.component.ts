@@ -159,6 +159,15 @@ export class PortfolioComponent implements OnInit {
           projectSource: 'https://codepen.io/Mohamed-Ayman/pen/jKxjeo',
           projectTime: '2018',
         },
+        {
+          projectImg: 'assets/img/projects/newChoosePlan.PNG',
+          projectTitle: 'Timer ',
+          projectSkills: 'HTML5, CSS3',
+          projectSummary: 'This work has been featured on CodePen ❤',
+          projectLive: 'https://codepen.io/Mohamed-Ayman/full/KeWjoY',
+          projectSource: 'https://codepen.io/Mohamed-Ayman/pen/KeWjoY',
+          projectTime: '2018',
+        },
 
       ]
     },
