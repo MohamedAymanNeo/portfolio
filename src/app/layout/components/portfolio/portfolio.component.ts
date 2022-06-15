@@ -177,6 +177,15 @@ export class PortfolioComponent implements OnInit {
           projectSource: 'https://codepen.io/Mohamed-Ayman/pen/XYVgxZ',
           projectTime: '2018',
         },
+        {
+          projectImg: 'assets/img/projects/smartCards.PNG',
+          projectTitle: 'Smart Cards',
+          projectSkills: 'HTML5, CSS3',
+          projectSummary: 'This work has been featured on CodePen ❤',
+          projectLive: 'https://codepen.io/Mohamed-Ayman/full/aKZJEo',
+          projectSource: 'https://codepen.io/Mohamed-Ayman/pen/aKZJEo',
+          projectTime: '2018',
+        },
 
       ]
     },
